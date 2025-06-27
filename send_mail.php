@@ -17,7 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    $headers .= "From: Website Contact <no-reply@sciencenewacademy.in>\r\n";
+    $headers .= "From: Science Academy <contact@sciencenewacademy.in>\r\n";
+
 
     if (mail($to, $subject, $body, $headers)) {
         http_response_code(200);
